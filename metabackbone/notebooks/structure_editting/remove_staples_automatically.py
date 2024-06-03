@@ -85,7 +85,7 @@ def find_safe_points(dna, left_indices, right_indices, t_values, sphere_radius):
     
     for t in t_values:
         P = np.array(cms_left_side + t * (cms_right_side - cms_left_side))
-        
+         
         safe = True
         for crossover_base in cross_over_bases:
             distance = np.linalg.norm(np.array(crossover_base.pos) - P)
@@ -142,17 +142,19 @@ def dna_structures(dna, staples_in_sphere):
 
     return new_structures
 
+
+#example
 new_dna_structures = []
 t_values = np.linspace(0, 1, 5)
 sphere_radius = 2.7
 safe_points = find_safe_points(dna, left_indices, right_indices, t_values, sphere_radius)
 # print(safe_points)
-
 for P in safe_points:
     staples_in_sphere = find_bases_in_sphere(dna, P, sphere_radius)
     new_dna_structures.extend(dna_structures(dna, staples_in_sphere))
 
 print("Number of new DNA structures:", len(new_dna_structures))
+
 
 for i, structure in enumerate(new_dna_structures):
     print(f"Structure {i + 1}: Number of bases = {structure.get_num_bases()}")

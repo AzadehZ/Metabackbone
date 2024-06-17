@@ -1,10 +1,10 @@
-INFO: seeding the RNG with 176120050
+INFO: seeding the RNG with 128335247
 INFO: Initializing backend 
 INFO: Simulation type: MD
 
 Please cite at least the following publication for any work that uses the oxDNA simulation package
   * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
-Run time: 0.004716471070423722Exception: Traceback (most recent call last):
+Run time: 0.0072552120000182185Exception: Traceback (most recent call last):
   File "/home/ava/miniconda3/envs/pypatchy/lib/python3.11/site-packages/ipy_oxdna/oxdna_simulation.py", line 533, in run_complete
     manager = oxpy.OxpyManager(ox_input)
               ^^^^^^^^^^^^^^^^^^^^^^^^^^

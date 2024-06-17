@@ -9,7 +9,7 @@
     "CUDA_list": "verlet",
     "CUDA_sort_every": "0",
     "max_density_multiplier": "50",
-    "steps": "1000000000.0",
+    "steps": "10000.0",
     "ensemble": "nvt",
     "thermostat": "john",
     "T": "20C",

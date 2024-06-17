@@ -26,7 +26,11 @@ prod_parameters = {'dt':f'0.003','steps':f'{prod_steps}','print_energy_every': f
 path = '/home/ava/Dropbox (ASU)/temp/Metabackbone/structure_files/six_helix_oxdna_file/modified/remove_staples'
 file_dir = os.path.join(path,'1512_bp')
 sim_path = '/home/ava/Dropbox (ASU)/temp/Metabackbone/metabackbone/notebooks/Simulations/simulations/removed_staples/1512_bp'
-rel_dir = sim_dir = os.path.join(sim_path,'relaxed')
+rel_dir = os.path.join(sim_path,'relaxed')
+
+print(f"Contents of file_dir: {os.listdir(file_dir)}")
+print(f"Contents of rel_dir: {os.listdir(rel_dir)}")
+
 
 sim = Simulation(file_dir, rel_dir)
 sim.build(clean_build='force')      

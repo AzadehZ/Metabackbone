@@ -32,5 +32,6 @@
     "external_forces": "0",
     "external_forces_file": "forces.json",
     "external_forces_as_JSON": "true",
-    "fix_diffusion": "false"
+    "fix_diffusion": "false",
+    "CUDA_device": "0"
 }

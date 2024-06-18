@@ -1,11 +1,31 @@
-INFO: seeding the RNG with 948425983
+INFO: seeding the RNG with 2103463209
 INFO: Initializing backend 
 INFO: Simulation type: MD
+INFO: CUDA backend precision: mixed
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Running Debye-Huckel at salt concentration =  1
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.357493, r_high=1.072479, cutoff=2.571515
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=1.608718e+00, debye_huckel_B=8.766182e-03
+INFO: The Debye length at this temperature and salt concentration is 0.357493
+INFO: Setting the maximum IO limit to 5 MB/s
+INFO: Using CUDA device 0
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Using edge-based approach
+INFO: pid: 30420
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.357493, r_high=1.072479, cutoff=2.571515
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=1.608718e+00, debye_huckel_B=8.766182e-03
+INFO: The Debye length at this temperature and salt concentration is 0.357493
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	  0.000  B written to files
+	  0.000  B written to stdout/stderr
 
 Please cite at least the following publication for any work that uses the oxDNA simulation package
   * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
-Run time: 0.005041779999828577Exception: Traceback (most recent call last):
+Run time: 0.016669815000568633Exception: Traceback (most recent call last):
   File "/home/ava/miniconda3/envs/pypatchy/lib/python3.11/site-packages/ipy_oxdna/oxdna_simulation.py", line 533, in run_complete
     manager = oxpy.OxpyManager(ox_input)
               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-oxpy.core.OxDNAError: Backend 'CUDA' not supported
+oxpy.core.OxDNAError: Distance between bonded neighbors 161 and 162 exceeds acceptable values (d = 1.012409)

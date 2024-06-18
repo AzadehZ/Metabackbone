@@ -1,3 +1,4 @@
+CUDA_device = 0
 CUDA_list = verlet
 CUDA_sort_every = 0
 T = 20C
